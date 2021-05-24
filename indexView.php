@@ -24,7 +24,7 @@
         <p>
           <?php echo nl2br(htmlspecialchars($data['content'])) ?>
           <br/>
-          <em><a href="#">Commentaires</a></em>
+          <em><a href="post.php?id=<?php echo $data['id']; ?>">Commentaires</a></em>
         </p>
       </div>
     <?php
