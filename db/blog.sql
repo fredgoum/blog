@@ -16,23 +16,23 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- --------------------------------------------------------
 
 --
--- Structure of table `billets`
+-- Structure of table `posts`
 --
 
-DROP TABLE IF EXISTS `billets`;
-CREATE TABLE IF NOT EXISTS `billets` (
+DROP TABLE IF EXISTS `posts`;
+CREATE TABLE IF NOT EXISTS `posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titre` varchar(255) NOT NULL,
-  `contenu` text NOT NULL,
-  `date_creation` datetime NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `creation_date` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
--- Content of table `billets`
+-- Content of table `posts`
 --
 
-INSERT INTO `billets` (`id`, `titre`, `contenu`, `date_creation`) VALUES
+INSERT INTO `posts` (`id`, `title`, `content`, `creation_date`) VALUES
 (1, 'Bienvenue sur mon blog !', 'Je vous souhaite à toutes et à tous la bienvenue sur mon blog qui parlera de... PHP bien sûr !', '2010-03-25 16:28:41'),
 (2, 'Le PHP à la conquête du monde !', 'C''est officiel, l''éléPHPant a annoncé à la radio hier soir "J''ai l''intention de conquérir le monde !".\r\nIl a en outre précisé que le monde serait à sa botte en moins de temps qu''il n''en fallait pour dire "éléPHPant". Pas dur, ceci dit entre nous...', '2010-03-27 18:31:11');
 
