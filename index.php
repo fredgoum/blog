@@ -1,6 +1,6 @@
 <!-- Router calls the correct Controller -->
 <?php
-require('./controller/frontend.php');
+require('controller/frontend.php');
 
 try {
   if (isset($_GET['action'])) {
